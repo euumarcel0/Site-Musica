@@ -1,0 +1,381 @@
+body, html {
+	margin: 0;
+	font: 16px "Lato", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #000;
+	height: 100%;
+}
+
+/* menu */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background: #000;
+  height: 60px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 60px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  color: #5826ee;
+  transition: .2s;
+}
+
+.active:hover {
+	background: #fff;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+	z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+  	background-color: 000;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #ff4c05;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+/* fim do menu*/
+
+.h11 {
+	font-family: "Rodina Light";
+	padding-top: 40px;
+	color: #ffffff;
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	color: #000000;
+}
+h3 {
+	display: flex;
+	justify-content: space-around;
+	color: #ff4c05;
+}
+
+.icons-especial {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.nomes-especial  {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.p {
+	padding-top: 5px;
+}
+
+.paragrafo-especial {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+	padding-bottom: 100px;
+}
+
+.conteudo4 {
+	padding-top: 200px;
+	padding-bottom: 250px;
+}
+
+.conteudo-direita {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+	color: #ff4c05;
+	font-size: 50px;
+}
+
+.imagem-avaliacao {
+	float: left;
+}
+
+.conteudo-esquerda {
+	padding-top: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+.conteudo-paragrafo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+}
+
+.imagem-revolucao {
+	float: right;
+	padding-top: 2px;
+	padding-bottom: 50px;
+}
+
+.conteudo2 {
+	padding-top: 100px;
+}
+
+.texto {
+	padding-top: 120px;
+}
+
+.conteudo3 {
+	padding-top: 100px;
+	padding-bottom: 250px;
+}
+.conteudo-direita {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+.imagem-avaliacao {
+	float: left;
+	padding-top: 12px;
+	padding-bottom: 50px;
+}
+
+.conteudo5 {
+	padding-top: 100px;
+}
+
+/* Efeito Parallax ------*/
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa6 {
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.caixa1 {
+	background-image: url("../imagens/Devis.png");
+	background-position: center;
+}
+
+.caixa2{
+	background-image: url("../imagens/música.png");
+}
+
+.caixa3{
+	background-image: url("../imagens/thumb.jpg");
+}
+
+.caixa4{
+	background-image: url("../imagens/banner.jpg");
+}
+.caixa6{
+	background-image: url("../imagens/thumb.jpg");
+}
+
+.banner {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+ /*rodape começa aqui */
+
+footer .wrapper .rodape {
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    background-color: #000;
+    bottom: 0%;
+    width: 100%;
+    position: initial;
+	cursor: pointer;
+}
+
+footer .wrapper .rodape ul {
+    position: absolute;
+    margin: 0 auto;
+}
+footer .wrapper .rodape li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+	padding-left: 100px;
+    padding: 30px;
+    width: 50px;
+}
+footer .wrapper .rodape ul li a {
+	text-decoration: none;
+	color: white;
+    padding: 3%;
+    position: relative;
+    left: 50px;
+	cursor: pointer;
+}
+
+footer .wrapper .rodape {
+    height: 75px;
+    bottom: 0%;
+}
+.wrapper .rodape p {
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    display: contents;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.paragrafo-rodape {
+	padding-top: 5px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 12px;padding-bottom: 10px;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	padding-left: 1100px;
+	position: relative;
+	padding-top: 18px;
+	padding-left: 50%;
+	
+}
+
+.face {
+	padding-right: 30px;
+}
+.insta {
+	padding-right: 30px;
+
+}
+
+.twitter {
+	padding-right: 30px;
+}
+
+.imge {
+	height: auto;
+	width: 100%;
+}
+
+/* formulario */
+
+form {
+	font-size: 16px;
+	background: #593ef3;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 10px 10px 10px;
+}
+
+input, textarea {
+	width: 470px;
+	padding: 10px;
+}
+
+.enviar input {
+	background-color: #ff4c05;
+	color: #fff;
+	height: 40px;
+	width: 150px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.enviar input:hover {
+	background-color: #F34500;
+}
+
+textarea {
+	width: 470px;
+	height: 120px;
+	line-height: 20px;
+}
+

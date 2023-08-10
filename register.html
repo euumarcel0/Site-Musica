@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Usuário</title>
+<link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+  body {
+    background-image: url("https://images3.alphacoders.com/102/thumb-1920-1028801.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
+<body>
+	{% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+	<a href="index.html">
+		<img class="logo" src="imagens/logo.png" width="80px" height="60px">
+	</a>
+	<div class="login-box">
+
+		<h1>Cadastre Seu Usuario</h1>
+		<form method="post" action="/Index.html">
+			<!-- Adicionamos o formulário e especificamos o arquivo Python para processar os dados -->
+			<div class="textbox">
+				<i class="fas fa-user"></i>
+				<input type="text" name="username" placeholder="Usuário" required>
+				<br>
+				<input type="password" name="senha"placeholder="Senha" required>
+				<br>
+			</div>
+			<input type="submit" class="btn" value="Enviar">
+		</form>
+		<p>Já tem uma conta? <a href="/">Faça login aqui</a></p>
+	</div>
+</body>
+</html>

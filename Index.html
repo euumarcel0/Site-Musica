@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background-image: url("https://images3.alphacoders.com/102/thumb-1920-1028801.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <a href="#">
+        <img class="logo" src="imagens/logo.png" width="80px" height="60px">
+    </a>
+    <div class="login-box">
+        <h1>Login</h1>
+            <!-- Adicionamos o formulário e especificamos o arquivo PHP para processar os dados -->
+            <div class="textbox">
+                <i class="fas fa-user"></i>
+                <form method="post" action="/aguarde.html">
+                <label for="username">Digite seu Usuário:</label>
+                <!-- Adicionamos o atributo 'name' para identificar o campo -->
+                <input type="text" name="username" placeholder="Usuário" required>
+                <br>
+                <label for="senha">Digite sua Senha:</label>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <!-- Adicionamos o atributo 'name' para identificar o campo -->
+                <br>
+            </div>
+            <input type="submit" class="btn" value="Entrar">
+        </form>
+        <a href="register.html">
+            <input type="button" class="btn" value="Cadastre-se">
+        </a>
+    </div>
+</body>
+</html>

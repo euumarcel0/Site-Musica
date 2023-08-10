@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aguarde</title>
+  <style>
+    /* Estilos CSS para a página de atraso */
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('https://images3.alphacoders.com/102/thumb-1920-1028801.jpg');
+      background-size: 100% 100%;
+      background-position: center;
+      border-radius: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Comic Sans MS, sans-serif;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 45px;
+      color: #0e02ff;
+      text-align: center;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .bolinha {
+      width: 15px;
+      height: 15px;
+      background-color: #fecae8;
+      border-radius: 50%;
+      margin: 0 5px;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Aguarde alguns segundos</h1>
+  <div class="loading">
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+    <span class="bolinha"></span>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = "menu.html";
+    }, 4000); 
+  </script>
+</body>
+</html>
